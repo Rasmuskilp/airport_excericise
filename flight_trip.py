@@ -13,17 +13,17 @@ class Flight_trip():
         self.passenger_list = []
     def add_plane(self,plane):
         self.plane = plane
-        return plane
+        return self.plane
     def add_destination(self,destination):
         self.destination = destination
-        return destination
+        return self.destination
     def add_origin(self,origin):
         self.origin = origin
-        return origin
+        return self.origin
     def add_passenger_list(self,passenger):
         self.passenger = passenger
         self.passenger_list.append(passenger)
-        return passenger, self.passenger_list
+        return self.passenger, self.passenger_list
     def return_list(self):
         return  self.passenger_list
 
